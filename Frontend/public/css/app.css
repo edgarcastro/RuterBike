@@ -1,0 +1,78 @@
+.banner-1{
+	background:url(../images/banner-4.jpg) no-repeat center;
+	
+}
+.banner-2{
+	background:url(../images/banner-5.jpg) no-repeat;
+	
+}
+.banner-3{
+	background:url(../images/banner-6.jpg) no-repeat center;
+}
+
+.me-one ul li a:hover{
+	color:#E65100;
+}
+.me-one h4{
+	color:#E65100;
+}
+
+.callbacks_tabs a:after {
+	background: #E65100;
+}
+.callbacks_here a:after{
+	background:#FFE0B2;
+}
+
+.b-btn a:hover{
+	border:2px solid #E65100;
+	background:#E65100;
+}
+
+.footer-main p a:hover {
+  color: #E65100;
+}
+
+.product-left:hover .p-one{
+	border: 1px solid #E65100;
+}
+.product-left:hover .p-one p a{
+	color: #E65100;
+}
+.mask span{
+	background:#E65100;
+}
+a.add-cart {
+	background: #E65100;
+}
+ul.product-categories li a:hover {
+	color: #E65100;
+}
+ul.size li a:hover {
+	background: #E65100;
+}
+.single-but input[type="submit"] {
+	background: #E65100;
+}
+
+.footer-left ul li a:hover{
+	color:#EF6C00;
+}
+
+.contact-left form input[type="submit"] {
+	background: #EF6C00;
+}
+
+.address input[type="submit"] {
+	background: #EF6C00;
+}
+
+.skyblue li>a,.skyblue>li.showhide span{color:#E65100}
+
+#service {
+	padding-top: 40px;
+}
+
+#service .row {
+	padding-top: 25px;
+}

@@ -1,0 +1,55 @@
+<!--start-breadcrumbs-->
+<div class="breadcrumbs">
+	<div class="container">
+		<div class="breadcrumbs-main">
+			<ol class="breadcrumb">
+				<li><a href="#/">Inicio</a></li>
+				<li class="active">Bicicletas</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<!--end-breadcrumbs-->
+<!--start-product-->
+<div class="product">
+	<div class="container">
+		<div class="product-main">
+			<div class="col-md-9 p-left">
+				<div class="product-one">
+					<div ng-repeat="producto in productos" class="col-md-4 product-left single-left">
+						<div class="p-one simpleCart_shelfItem">
+							<a href="#bicicletas/{{producto.id}}">
+								<img src="{{producto.url_imagen}}" alt="" />
+								<div class="mask mask1">
+									<span>Vista rapida</span>
+								</div>
+							</a>
+							<h4>{{producto.nombre}}</h4>
+							<p><a class="item_add" href="#"><i></i> <span class=" item_price">${{producto.precio}}</span></a></p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="col-md-3 p-right single-right">
+				<h3>Categorias</h3>
+				<ul class="product-categories">
+					<li><a href="#bicicletas/categoria/infantil">Linea Infantil</a>
+						<!--<span class="count">(14)</span>--></li>
+					<li><a href="#bicicletas/categoria/ruta">Linea de Ruta</a>
+						<!--<span class="count">(2)</span>--></li>
+					<li><a href="#bicicletas/categoria/montaña">Linea de Montaña</a>
+						<!--<span class="count">(2)</span>--></li>
+					<li><a href="#bicicletas/categoria/carga">Linea de Carga</a>
+						<!--<span class="count">(11)</span>--></li>
+					<li><a href="#bicicletas/categoria/motor">Bicicletas a Motor</a>
+						<!--<span class="count">(3)</span>--></li>
+					<li><a href="#bicicletas/categoria/electrica">Bicicletas Electricas</a>
+						<!--<span class="count">(3)</span>--></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--end-product-->

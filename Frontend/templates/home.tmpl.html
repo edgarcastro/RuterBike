@@ -1,0 +1,132 @@
+ 
+    <!--banner-starts-->
+    <div class="bnr">
+        <div id="top" class="callbacks_container">
+            <ul class="rslides" id="slider4">
+                <li>
+                    <div class="banner-1"></div>
+                </li>
+                <li>
+                    <div class="banner-2"></div>
+                </li>
+                <li>
+                    <div class="banner-3"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!--banner-ends-->
+    <!--Slider-Starts-Here-->
+    <script src="public/js/responsiveslides.min.js"></script>
+    <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+    <!--End-slider-script-->
+    <!--start-banner-bottom-->
+    <div class="banner-bottom">
+        <div class="container">
+            <div class="banner-bottom-top">
+                <div class="col-md-6 banner-bottom-left">
+                    <div class="bnr-one">
+                        <div class="bnr-left">
+                            <h1><a href="#bicicletas/categoria/motor">Bicicleta a Motor</a></h1>
+                            <p>Con motor a gasolina.</p>
+                            <div class="b-btn">
+                                <a href="#bicicletas/categoria/motor">VER AHORA</a>
+                            </div>
+                        </div>
+                        <div class="bnr-right">
+                            <a href="#bicicletas/categoria/motor"><img src="public/images/b-3.jpg" alt="" /></a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="col-md-6 banner-bottom-right">
+                    <div class="bnr-two">
+                        <div class="bnr-left">
+                            <h2><a href="#bicicletas/categoria/electrica">Bicicleta Electrica</a></h2>
+                            <p>Con motor electrico.</p>
+                            <div class="b-btn">
+                                <a href="#bicicletas/categoria/electrica">VER AHORA</a>
+                            </div>
+                        </div>
+                        <div class="bnr-right">
+                            <a href="#bicicletas/categoria/electrica"><img src="public/images/b-4.jpg" alt="" /></a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--end-banner-bottom-->
+    <!--start-shoes-->
+    <div class="shoes">
+        <div class="container">
+            <div class="product-one">
+                <div ng-repeat="producto in productos" class="col-md-3 product-left">
+                    <div class="p-one simpleCart_shelfItem">
+                        <a href="#bicicletas/{{producto.id}}">
+                            <img src="{{producto.url_imagen}}" alt="" />
+                            <div class="mask">
+                                <span>Vista rapida</span>
+                            </div>
+                        </a>
+                        <h4>{{producto.nombre}}</h4>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--end-shoes-->
+    <!--start-abt-shoe-->
+    <div class="abt-shoe">
+        <div class="container">
+            <div class="abt-shoe-main">
+                <div class="col-md-4 abt-shoe-left">
+                    <div class="abt-one">
+                        <a href="#bicicletas/categoria/montaña"><img src="public/images/abt-4.jpg" alt="" /></a>
+                        <h4><a href="#bicicletas/categoria/montaña">Linea de Montaña</a></h4>
+                        <p>La bici ideal para todo, desde rutas rápidas por senderos hasta exigentes competiciones de un día.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 abt-shoe-left">
+                    <div class="abt-one">
+                        <a href="#bicicletas/categoria/infantil"><img src="public/images/abt-5.jpg" alt="" /></a>
+                        <h4><a href="#bicicletas/categoria/infantil">Linea Infantil</a></h4>
+                        <p>Bicicletas para niños: diseño ergonómico que se ajusta en tres direcciones, para crecer junto a los pequeños.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 abt-shoe-left">
+                    <div class="abt-one">
+                        <a href="#bicicletas/categoria/servicios"><img src="public/images/abt-6.jpg" alt="" /></a>
+                        <h4><a href="#servicios">Servicio de Pintura</a></h4>
+                        <p>Servicio de Mantenimiento y Reparación para cualquier Bicicleta. La calidad al alcance de tu bolsillo. </p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--end-abt-shoe-->
+   
